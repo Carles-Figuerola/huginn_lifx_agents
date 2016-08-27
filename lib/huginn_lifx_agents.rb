@@ -16,5 +16,7 @@ end
 
 HuginnAgent.load 'huginn_lifx_agents/clients/lifx_client'
 HuginnAgent.load 'huginn_lifx_agents/concerns/lifx_agentable'
+HuginnAgent.load 'huginn_lifx_agents/service_option_providers/lifx_option_provider'
+HuginnAgent.load 'huginn_lifx_agents/controllers/omniauth_callbacks_controller'
 HuginnAgent.register 'huginn_lifx_agents/lifx_pulse_lights_agent'
 HuginnAgent.register 'huginn_lifx_agents/lifx_toggle_lights_agent'

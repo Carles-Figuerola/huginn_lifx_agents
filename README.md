@@ -12,6 +12,13 @@ Add this string to your Huginn's .env `ADDITIONAL_GEMS` configuration:
 ADDITIONAL_GEMS=<other_agent_gem>,huginn_lifx_agents(github: omniscopeio/huginn_io_agents)
 ```
 
+Get credentials for your instance of Huginn to OAuth users on Lifx and put your cedentials into ENV variables:
+
+```
+LIFX_CLIENT_ID=asdf8796asdf876asf8976sad8675asdf
+LIFX_CLIENT_SECRET=asdf8765asdf8765asdf8765dsaf098sfd
+```
+
 And then execute:
 
     $ bundle

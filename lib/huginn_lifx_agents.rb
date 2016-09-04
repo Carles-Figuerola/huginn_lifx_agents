@@ -12,14 +12,10 @@ module HuginnLifxAgents
       config.omniauth(:lifx, key, secret)
     end
   end
-
-  Service.register_options_provider('lifx') do |_|
-    { name: 'LIFX User' }
-  end
 end
 
 HuginnAgent.load 'huginn_lifx_agents/clients/lifx_client'
 HuginnAgent.load 'huginn_lifx_agents/concerns/lifx_agentable'
-HuginnAgent.load 'huginn_lifx_agents/service_option_providers/lifx_option_provider'
+HuginnAgent.load 'huginn_lifx_agents/service_option'
 HuginnAgent.register 'huginn_lifx_agents/lifx_pulse_lights_agent'
 HuginnAgent.register 'huginn_lifx_agents/lifx_toggle_lights_agent'

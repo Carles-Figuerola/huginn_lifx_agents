@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = Dir['spec/**/*.rb']
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "huginn_agent", "~> 0.4.0"
+  spec.add_runtime_dependency "huginn_agent", "~> 0.6.0"
   spec.add_runtime_dependency "omniauth-lifx", "~> 1.1.0"
 
   spec.add_development_dependency "bundler", "~> 1.12"
